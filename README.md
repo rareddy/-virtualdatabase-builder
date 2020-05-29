@@ -7,6 +7,14 @@ Start the container, where `/hostdir` where your `pom.xml` file is exists.
 ```
 podman run --volume /hostdir:~/vdb -it quay.io/teiid/virtualdatabase-builder:latest /bin/bash
 
+# now in the shell of the container
+
+# move to directory where vdb is defined (ex: sample), how this sample directory generated from the YAML file is TBD
+cd sample
+
+# build the java project
 mvn -B -Dmaven.repo.local=/tmp/artifacts/m2 install
 
+# run the java project
+java -jar target/dv-customer-1.0.0.jar
 ```
