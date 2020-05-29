@@ -5,7 +5,8 @@ This is base Java build image for building Virtual Databases using Teiid Spring 
 Start the container, where `/hostdir` where your `pom.xml` file is exists.
 
 ```
-podman run --volume /hostdir:~/vdb -it quay.io/teiid/virtualdatabase-builder:latest /bin/bash
+docker build 
+docker run --volume /hostdir:~/vdb -it localhost/{your-name}/virtualdatabase-builder:latest /bin/bash
 
 # now in the shell of the container
 
