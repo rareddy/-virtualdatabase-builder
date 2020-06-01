@@ -8,7 +8,7 @@
         <dependency>
             <groupId>org.teiid</groupId>
             <artifactId>teiid-spring-boot-starter</artifactId>
-            <version>1.5.0</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.teiid</groupId>
             <artifactId>spring-odata</artifactId>
-            <version>1.5.0</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>me.snowdrop</groupId>
@@ -73,7 +73,7 @@
             <plugin>
                 <groupId>org.teiid</groupId>
                 <artifactId>vdb-codegen-plugin</artifactId>
-                <version>1.5.0</version>
+                <version>1.5.1</version>
                 <executions>
                     <execution>
                         <id>codegen</id>

@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <properties>
-        <version.teiid.springboot>1.5.0</version.teiid.springboot>
+        <version.teiid.springboot>1.5.1</version.teiid.springboot>
         <version.spring>2.2.6.RELEASE</version.spring>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.h2>1.4.200</version.h2>

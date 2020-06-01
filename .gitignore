@@ -28,3 +28,8 @@ build/.settings
 build/.classpath 
 build/.factorypath 
 build/.project
+
+sample/.classpath
+sample/.project
+sample/.settings/
+sample/target/
