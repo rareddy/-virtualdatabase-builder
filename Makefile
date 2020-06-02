@@ -19,5 +19,5 @@ quay-push:
 
 .PHONY: clean
 clean:
-	mvn -B -s ./build/settings.xml -Dmaven.repo.local=./build/m2 -f ./build/pom.xml clean
+	mvn -B -s ./build/settings.xml -Dmaven.site.skip=true -Djacoco.skip=true -Dcheckstyle.skip=true -Dmaven.compiler.source=1.11 -Dmaven.compiler.target=1.11 -Dmaven.repo.local=./build/m2 -f ./build/pom.xml clean
 	rm build/m2
