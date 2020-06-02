@@ -9,7 +9,7 @@ all: build
 
 .PHONY: build
 build:
-	mvn -B -s ./build/settings.xml -Dmaven.repo.local=./build/m2 -f ./build/pom.xml install
+	mvn -B -s ./build/settings.xml -Dmaven.repo.local=./build/m2 -f ./build/pom.xml clean install
 	buildah bud -t $(IMAGE_NAME) .
 	rm -f ${project.basedir}
 
