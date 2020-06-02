@@ -16,18 +16,18 @@ REPOSITORY                                        TAG      IMAGE ID       CREATE
 localhost/rareddy/virtualdatabase-builder         latest   3b0b53327c58   11 minutes ago   1.28 GB
 ```
 
-This image has folder "/home/jboss/vdb/sample" where a sample java project that represents Java project that need to be generated from a given YAML file that is created in VSCode plugin. For example purposes this "sample" file given, in future this will be replaced with a actual code generation.
+This image has folder "/home/jboss/sample" where a sample java project that represents Java project that need to be generated from a given YAML file that is created in VSCode plugin. For example purposes this "sample" file given, in future this will be replaced with a actual code generation.
 
 Start the container, and volume mount the current directory
 
 ```
-docker run --volume .:/home/jboss/vdb:z -it localhost/{your-name}/virtualdatabase-builder:latest /bin/bash
+docker run --volume .:/home/jboss/yamlvdb:z -it localhost/{your-name}/virtualdatabase-builder:latest /bin/bash
 ```
 
 for my user name this will be like
 
 ```
-docker run --volume .:/home/jboss/vdb:z -p5432:35432 -it localhost/rareddy/virtualdatabase-builder:latest /bin/bash
+docker run --volume .:/home/jboss/yamlvdb:z -p5432:35432 -it localhost/rareddy/virtualdatabase-builder:latest /bin/bash
 ```
 
 This will start the image as container, and user will be presented with a shell command to further execute any commands. To build and execute the project run
