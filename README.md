@@ -33,6 +33,7 @@ docker run --volume .:/home/jboss/yamlvdb:z -p5432:35432 -it localhost/rareddy/v
 This will start the image as container, and user will be presented with a shell command to further execute any commands. To build and execute the project run
 
 ```
+cd vdb
 run.sh dv-customer
 ```
 
