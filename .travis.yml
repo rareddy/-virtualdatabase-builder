@@ -20,6 +20,9 @@ before_install:
 install:
   - make
 
+test:
+  - echo "No tests to run"
+
 deploy:
   provider: script
   script: "buildah login -u $QUAY_USERNAME -p $QUAY_PASSWORD quay.io && make quay-push"
