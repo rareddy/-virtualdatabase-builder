@@ -27,7 +27,7 @@ deploy:
   on:
     tags: false
     branch: master
-    repo: teiid/virtualdatabase-builder
+    repo: rareddy/virtualdatabase-builder
     condition: -n "$QUAY_USERNAME"
 
 cache:
