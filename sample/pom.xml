@@ -21,14 +21,9 @@
             <version>1.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.199</version>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.8</version>
+            <groupId>org.teiid</groupId>
+            <artifactId>spring-data-h2</artifactId>
+            <version>${teiid.springboot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.teiid</groupId>
