@@ -34,9 +34,9 @@ This will start the image as container, and user will be presented with a shell 
 
 ```
 cd vdb
-run.sh dv-customer
+run.sh sample
 ```
 
-where `dv-customer` is the name of the virtualization from YAML file, in this case from `sample` project.
+where `sample` is the name of the virtualization from YAML file, in this case from `sample` project.
 
 make sure the above app is running, then connect to the SQL interface using the SQLClient plugin
