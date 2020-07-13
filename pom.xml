@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.integration</groupId>
+    <artifactId>vdb-cr-to-yaml</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>VDB Code Generator from YAML file to build</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.teiid</groupId>
+                <artifactId>vdb-codegen-plugin</artifactId>
+                <version>${teiid.springboot.version}</version>
+                <configuration>
+                    <yamlFile>/home/jboss/vdb/${vdb.name}.yaml</yamlFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>vdb-codegen</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

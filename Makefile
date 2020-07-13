@@ -39,7 +39,6 @@ build:
 	  -Dbasepom.check.skip-javadoc=true \
 	  -f ./build/pom.xml clean install
 	buildah bud --build-arg TEIID_SPRINGBOOT_VERSION=$(TEIID_SPRINGBOOT_VERSION) --build-arg SPRINGBOOT_VERSION=$(SPRINGBOOT_VERSION) -t $(IMAGE_NAME) .
-	rm -f ${project.basedir}
 
 .PHONY: quay-push
 quay-push:
