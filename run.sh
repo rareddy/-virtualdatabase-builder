@@ -15,7 +15,7 @@ mvn -B \
 
 # Make sure above build is successful
 if [[ "$?" -ne 0 ]] ; then
-  echo 'failed' > result.txt; exit $rc
+  echo 'failed' > /home/jboss/vdb/build/tmp/log.txt; exit $rc
 else
   rm -rf ${NAME}
   mkdir ${NAME}
@@ -48,8 +48,7 @@ mvn -B \
 
 # Run the project
 if [[ "$?" -ne 0 ]] ; then
-  echo 'failed' > result.txt; exit $rc
+  echo 'failed' > /home/jboss/vdb/build/tmp/log.txt; exit $rc
 else
-  java -jar target/${NAME}-1.0.0.jar
+  java -jar target/${NAME}-1.0.0.jar 2>&1 | tee /home/jboss/vdb/build/tmp/log.txt
 fi
-
