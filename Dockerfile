@@ -9,5 +9,5 @@ ENV SPRINGBOOT_VERSION=$SPRINGBOOT_VERSION
 COPY build/m2 /tmp/artifacts/m2
 COPY run.sh /home/jboss/run.sh
 COPY pom.xml /home/jboss/pom.xml
-RUN chmod +x /home/jboss/run.sh
+#RUN chmod +x /home/jboss/run.sh
 
